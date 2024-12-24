@@ -5,6 +5,21 @@ const app = express();
 //! app.use("/", (req, res) => res.send("home route is here"));
 //! app.use appect all the route
 
+app.use((req, res) => {
+    res.send("hello from the node server")
+})
+
+app.use("/", (req, res) => {
+    res.send("hello from the node server - 2")
+})
+
+//! this route won't work for that we have to use it before the "/" route
+app.use("/user", (req, res) => {
+    res.send("hello from the user")
+})
+
+// --------------------------------------------
+
 app.get("/", (req, res) => {
     res.send("home route is here")
 })
