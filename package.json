@@ -1,0 +1,19 @@
+{
+  "name": "backend-setup-for-practice",
+  "version": "1.0.0",
+  "description": "Practice and testing setup of backend ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "Hansraj Singh Tomar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
